@@ -1,0 +1,71 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: rgba(255, 255, 255, 0.197);
+  padding: 20px;
+}
+
+
+.container{
+  border-style: solid;
+  border-color: black;
+  max-width: 450px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+}
+
+.output{
+  text-align: right;
+  padding: 20px;
+  width: 100%;
+  font-size: 40px;
+}
+
+.buttons{
+  padding: 20px;
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+  gap: 5px;
+
+}
+
+.output{
+  background-color: rgba(194, 176, 176, 0);
+  color: white;
+  grid-column: span 1/5;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 100px;
+  font-size: larger;
+}
+
+
+
+button{
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover{
+  background-color: rgb(59, 57, 57);
+  color: white;
+}
+
+.clear{
+  grid-column: span 3;
+
+}
+
+.clear:active{
+  background-color: red;
+  color: white;
+}
+
+.equals{
+  grid-column: span 2;
+  background-color: rgb(39, 79, 236);
+}
