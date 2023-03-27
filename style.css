@@ -4,60 +4,49 @@
     box-sizing: border-box;
   }
   body{
-    background-color: whitesmoke;
+    background-color: rgb(198, 198, 198);
   }
 
   .Calculator{
-    width: 400px;
+    border: 1px solid black;
+    margin: 100px auto;
+    width: 30%;
     height: auto;
-    margin: 50px auto;
-    border: .6px solid black;
-    border-radius: 5px;
   }
 
   .Calculator .output{
     width: 100%;
     background-color: black;
-    height: 100px;
-    color: white;
+    height: 70px;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     padding-right: 10px;
-    font-size: 1.5rem;
-
+    align-items: center;
   }
 
   .Calculator .container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    height: auto;
   }
 
-  .Calculator button{
-    padding: 10px;
-    font-size: 1.2rem;
-    background-color: rgb(255, 255, 255);
-    cursor: pointer;
-  }
-
-.Calculator button:active{
-  transform: translate(4px 0 0 0);
-}
-
-
-  .container .clear{
+  .Calculator .container .clear{
     grid-column: 1 / 5;
   }
 
-  .container .operator{
+  .Calculator button{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  .clear{
+    background-color: rgb(153, 19, 19);
+  }
+
+  .operator{
     background-color: orange;
   }
-
-  .container .clear{
-    background-color: rgb(212, 13, 13);
-  }
-
-  .container .clear:active{
-    background-color: rgb(157, 9, 9);
-  }
-
