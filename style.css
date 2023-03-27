@@ -4,13 +4,13 @@
     box-sizing: border-box;
   }
   body{
-    background-color: rgb(198, 198, 198);
+    background-color: rgb(251, 251, 251);
   }
 
   .Calculator{
     border: 1px solid black;
     margin: 100px auto;
-    width: 30%;
+    width: 300px;
     height: auto;
   }
 
@@ -40,13 +40,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: black;
+    border: .5px solid black;
   }
 
-  
+
   .clear{
     background-color: rgb(153, 19, 19);
+  }
+
+  .clear:active{
+    background-color: rgb(124, 17, 17);
   }
 
   .operator{
     background-color: orange;
   }
+
+  .operator:active{
+    background-color: rgb(192, 127, 7);
+  }
+
+  .operand:active, .equals:active, .decimal:active{
+    background-color: rgb(187, 184, 184);
+  }
+
+  @media(max-width{
+    .Calculator{
+      width: 80%;
+    }
+  })
